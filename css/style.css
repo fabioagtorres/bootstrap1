@@ -1,0 +1,40 @@
+
+body{
+    font: 20px Arial, sans-serif;
+    color: blanchedalmond;
+}
+
+.navbar {
+    background-color: aqua;
+}
+
+.whoarewe {
+    color: rgb(245, 245, 245);    
+    background-image: url(../img/10.jpg);
+    background-size: cover ;
+}
+
+.margin {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.groowroom {
+    background-image: url(../img/11.jpeg);
+    background-size: cover ;
+}
+
+.backshadow{
+    background-color: rgba(82, 62, 62, 0.6);    
+}
+
+.weare-h3 {
+   color:rgb(31, 10, 153) ;
+}
+
+#agradecimento {
+    color: rgb(31, 10, 153) ;
+}
+.margin-bottom {
+    margin-bottom: 500px;
+}
