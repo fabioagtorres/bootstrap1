@@ -34,6 +34,10 @@ body{
 
 #agradecimento {
     color: rgb(31, 10, 153) ;
+    
+    background-color: rgba(82, 62, 62, 0.6) ;
+    background-position: center;
+    background-size: 100px;
 }
 .margin-bottom {
     margin-bottom: 500px;
