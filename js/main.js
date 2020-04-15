@@ -10,9 +10,13 @@ function validarIdade(idade){
 
 $(function(){
     $(".cep").hide();
+    $(".progresso").hide();
 });
 
+
+
 function clicou (){
+    $(".progresso").show();
     var cep = document.getElementById("cep").value;
     var url = "https://viacep.com.br/ws/" + cep + "/json/";
     console.log(url);
@@ -29,6 +33,7 @@ function clicou (){
             document.getElementById("uf").innerHTML = response.uf;
             $("#adresstt").html("Adress:" + response.cep);
             $(".cep").show();
+            $(".progresso").hide();
         }
     })
     document.getElementById("agradecimento").innerHTML = "We're sending a can with 500grams for the location below";
