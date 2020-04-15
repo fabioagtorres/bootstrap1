@@ -15,7 +15,7 @@
                 <img class="rounded-circle" src="img/12.jpg" alt="imagem 1" width="50px" height="50px">
             </a>
             <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" arial-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
                 <div class="collapse navbar-collapse">
@@ -33,7 +33,7 @@
                 </div>
                 <select onchange="funcaochange(this)">
                     <option value="1">Buds</option>
-                    <option value="2">Growers</option>git
+                    <option value="2">Growers</option>
                     <option value="3">Partners</option>
                 </select>
         </nav>
@@ -56,16 +56,40 @@
                 </div>
                 <img  src="img/1.jpg" alt="imagem 2" width="150" height="150px">
                 <h3 class="box weare-h3">We are a team compromissed with the results and the quality of our services.</h3>
-                <p id="mousemove" onmouseover="trocar()" onmouseout="voltar(this)">Put your mouse over here</p>
-                <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar()">Mouse Here</p>
+                <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Put your mouse over here</p>
+                <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Mouse Here</p>
                 <p onmouseover="trocar(this)" onmouseout="voltar(this)">Mouse Over Here</p>
                 <input placeholder="Only numbers (00000000)" id="cep">
                 <button type="button" onclick="clicou()">PUT YOUR CEP HERE</Button>
-                <p id="agradecimento" ></p>
-                <p id="logradouro"></p>
-                <p id="bairro"></p>
-                <p id="localidade"></p>
-                <p id="uf"></p>
+                    <p id="agradecimento" ></p>
+                    <div class="container cep">
+                        <div class="row">
+                            <h3 id="adresstt" class="margin"></h3>
+                        </div>
+                        <div class="row">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Logradouro</td>
+                                        <td id="logradouro"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bairro</td>
+                                        <td id="bairro"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Localidade</td>
+                                        <td id="localidade"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>UF</td>
+                                        <td id="uf"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                
             </div>            
         </section >
         <section id=groowroom>

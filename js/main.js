@@ -8,7 +8,9 @@ function validarIdade(idade){
     return validar;
 }
 
-
+$(function(){
+    $(".cep").hide();
+});
 
 function clicou (){
     var cep = document.getElementById("cep").value;
@@ -25,6 +27,8 @@ function clicou (){
             document.getElementById("bairro").innerHTML = response.bairro;
             document.getElementById("localidade").innerHTML = response.localidade;
             document.getElementById("uf").innerHTML = response.uf;
+            $("#adresstt").html("Adress:" + response.cep);
+            $(".cep").show();
         }
     })
     document.getElementById("agradecimento").innerHTML = "We're sending a can with 500grams for the location below";
@@ -32,6 +36,7 @@ function clicou (){
     //window.location.href = "";
     //alert ("Obrigado por clicar");
 }
+
 function trocar(elemento){
     elemento.innerHTML = "<i>WE APRECIATE YOUR EFFORT ! CHEERS</i>";
     //document.getElementById("mousemove").innerHTML = "<i>WE APRECIATE YOUR EFFORT ! CHEERS</i>";
